@@ -1,14 +1,13 @@
 Build.PL
 Changes
-MANIFEST
-META.yml # Will be created by "make dist"
-README
 lib/Test/File/Contents.pm
-t/00.load.t
+MANIFEST			This list of files
+META.json
+META.yml
+README.md
 t/10.basic.t
+t/data/aaa.txt
+t/data/aaa2.txt
+t/data/bbb.txt
 t/pod-coverage.t
 t/pod.t
-t/aaa.txt
-t/aaa2.txt
-t/bbb.txt
-examples/simple.pl

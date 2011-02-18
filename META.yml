@@ -1,14 +1,33 @@
 ---
-name: Test-File-Contents
-version: 0.05
+abstract: 'Test routines for examining the contents of files'
 author:
-  - 'Kirrily Robert <skud@cpan.org>'
-abstract: Test routines for examining the contents of files
+  - unknown
+build_requires:
+  Module::Build: 0.30
+  Test::More: 0.70
+configure_requires:
+  Module::Build: 0.30
+dynamic_config: 1
+generated_by: 'Module::Build version 0.3703, CPAN::Meta::Converter version 2.110440'
 license: perl
-requires:
-  Test::More: 0
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Test-File-Contents
 provides:
   Test::File::Contents:
     file: lib/Test/File/Contents.pm
-    version: 0.05
-generated_by: Module::Build version 0.26
+    version: 0.10
+recommends:
+  Test::Pod: 1.20
+  Test::Pod::Coverage: 1.06
+requires:
+  Digest::MD5: 0
+  File::Spec: 0
+  Test::Builder: 0.70
+resources:
+  bugtracker: http://github.com/theory/test-file-contents/issues/
+  homepage: http://search.cpan.org/dist/Test-File-Contents/
+  license: http://dev.perl.org/licenses/
+  repository: http://github.com/theory/test-file-contents/tree/
+version: 0.10
