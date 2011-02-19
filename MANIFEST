@@ -9,5 +9,7 @@ t/10.basic.t
 t/data/aaa.txt
 t/data/aaa2.txt
 t/data/bbb.txt
+t/data/utf8-2.txt
+t/data/utf8.txt
 t/pod-coverage.t
 t/pod.t

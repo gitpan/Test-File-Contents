@@ -1,12 +1,13 @@
-Test/File/Contents 0.10
+Test/File/Contents 0.20
 =======================
 
 This library's module, Test::File::Contents, provides an interface for testing
 file contents. Usage is quite simple:
 
-    file_contents_eq $file, $contents, $description;
-    file_contents_like $file, qr/contents/, $description;
-    file_md5_sum $file, $md5hash, $description;
+    file_contents_eq         $file,     $contents,    $description;
+    file_contents_eq_or_diff $file,     $string,      $description;
+    file_contents_like       $file,     qr/contents/, $description;
+    file_md5_sum_is          $file,     $md5hash,     $description;
 
 INSTALLATION
 
@@ -29,9 +30,11 @@ Dependencies
 
 Test::File::Contents requires the following modules:
 
+* Perl 5.8.3
 * Test::Builder
 * Digset::MD5
 * File::Spec
+* Text::Diff
 
 Copyright and Licence
 ---------------------

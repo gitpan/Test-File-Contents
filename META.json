@@ -33,14 +33,16 @@
          "requires" : {
             "Digest::MD5" : 0,
             "File::Spec" : 0,
-            "Test::Builder" : "0.70"
+            "Test::Builder" : "0.70",
+            "Text::Diff" : "0.35",
+            "perl" : "5.008003"
          }
       }
    },
    "provides" : {
       "Test::File::Contents" : {
          "file" : "lib/Test/File/Contents.pm",
-         "version" : "0.10"
+         "version" : "0.20"
       }
    },
    "release_status" : "stable",
@@ -56,5 +58,5 @@
          "url" : "http://github.com/theory/test-file-contents/tree/"
       }
    },
-   "version" : "0.10"
+   "version" : "0.20"
 }

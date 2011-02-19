@@ -1,6 +1,20 @@
 Revision history for Test-File-Contents
 
-0.10  2011-02-18
+0.20    2011-02-18
+      - Now require Perl 5.8.3 or higher. 5.8 has effectively been the
+        required Perl all along thanks to the dependency on Digest::MD5.
+      - Added encoding option, to make sure that files are read in their
+        proper encoding.
+      - Significant refactoring; only visible change should be that the
+        actualy MD5 checksum will no longer be included in the `file_md5sum`
+        failure diagnostics.
+      - Renamed `file_md5sum` to `file_md5sum_is`. The old name remains as an
+        alias for backwards compatibility.
+      - Renamed `file_contents_identical` to `files_eq`. The old name remains
+        as an alias for backwards compatibility.
+      - Added `file_contents_eq_or_diff()` and `files_eq_or_diff()`.
+
+0.10    2011-02-18
       - Maintainership taken by David E. Wheeler.
       - Removed `examples/simple.pl`, since it wouldn't run anyway.
       - Added prototypes to the test functions.
