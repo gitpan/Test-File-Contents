@@ -1,6 +1,6 @@
 package Test::File::Contents;
 
-use 5.8.3;
+use 5.008003;
 use warnings;
 use strict;
 
@@ -12,7 +12,7 @@ Test::File::Contents - Test routines for examining the contents of files
 
 =cut
 
-our $VERSION = '0.20';
+our $VERSION = '0.21';
 
 use Test::Builder;
 use Digest::MD5;
